@@ -1,0 +1,54 @@
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+.BodyM {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.BodyL {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.BodySmall {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.CaptionM {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.CaptionL {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#app {
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
