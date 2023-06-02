@@ -6,4 +6,13 @@
 body {
   flex-direction: column;
 }
+
+
+.panel{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $dark;
   
+}
