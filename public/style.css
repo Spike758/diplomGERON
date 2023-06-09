@@ -43,20 +43,204 @@ h5 {
   font-weight: 300;
 }
 
-#app {
+.container {
+  display: flex;
   width: 100%;
 }
 
-body {
-  flex-direction: column;
+.btn {
+  padding: 15px 100px;
+  border-radius: 5px;
+  transition: 0.4s;
+  border: none;
+  font-size: 20px;
+}
+.btn.main {
+  background-color: #FFC702;
+  color: #333333;
+}
+.btn.inverse {
+  background-color: #A93DFF;
+  color: #FAFAFA;
+}
+.btn.dark {
+  background-color: #333333;
+  color: #FAFAFA;
+}
+.btn.light {
+  background-color: #FAFAFA;
+  color: #333333;
+}
+.btn:hover {
+  cursor: pointer;
 }
 
 .panel {
-  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #333333;
+  padding: 20px 20px 50px 20px;
+}
+.panel .upper-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.panel .upper-block .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel .upper-block .logo .circle {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 1px solid #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.panel .upper-block .logo .circle:hover {
+  cursor: pointer;
+}
+.panel .upper-block .logo .circle p {
+  text-align: center;
+  color: #FAFAFA;
+  user-select: none;
+}
+.panel .upper-block .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+.panel .upper-block .links .link {
+  display: flex;
+  align-items: center;
+}
+.panel .upper-block .links .link a {
+  display: block;
+  color: #FAFAFA;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.panel .upper-block .links .link a:hover {
+  color: #FFC702;
+}
+.panel .upper-block .links .link .svg-container {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.panel .upper-block .links .link .svg-container svg {
+  width: 40px;
+  height: 40px;
+  stroke: #FAFAFA;
+  fill: #FAFAFA;
+}
+.panel .bottom-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.panel .bottom-block a {
+  display: block;
+  color: #FAFAFA;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.panel .bottom-block a:hover {
+  color: #FFC702;
+}
+.panel .bottom-block svg {
+  width: 40px;
+  height: 40px;
+  stroke: #FAFAFA;
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.content .wrapper .text-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.content .wrapper .table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content .wrapper .table-container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .wrapper .table-container .row .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 25px 50px;
+  border: 1px solid #333333;
+  border-right: none;
+  text-align: center;
+}
+.content .wrapper .table-container .row .col .square {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.content .wrapper .table-container .row .col .square.pen {
+  background-color: #FFC702;
+  margin-right: 10px;
+}
+.content .wrapper .table-container .row .col .square.trash {
+  background-color: #FF5C16;
+}
+.content .wrapper .table-container .row .col .square:hover {
+  cursor: pointer;
+}
+.content .wrapper .table-container .row .col.action {
+  padding: 20px 50px;
+}
+.content .wrapper .table-container .row .col.md {
+  border-top: none;
+  border-bottom: none;
+}
+.content .wrapper .table-container .row .col.bd-r {
+  border-right: 1px solid #333333;
+}
+.content .wrapper .table-container .row .col.title {
+  background-color: #333333;
+}
+.content .wrapper .table-container .row .col.title h3 {
+  text-transform: capitalize;
+  color: #FAFAFA;
+}
+.content .wrapper .table-container .row .col.rc-l {
+  border-radius: 10px 0 0 0;
+}
+.content .wrapper .table-container .row .col.rc-r {
+  border-radius: 0 10px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

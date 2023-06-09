@@ -1,18 +1,217 @@
 @import 'colorsFonts';
-#app {
+
+.container{
+  display: flex;
   width: 100%;
 }
 
-body {
-  flex-direction: column;
+.btn{
+  padding: 15px 100px;
+  border-radius: 5px;
+  transition: 0.4s;
+  border: none;
+  font-size: 20px;
+  &.main{
+    background-color: $buttons;
+    color: $dark;
+  }
+  &.inverse{
+    background-color: $inverse;
+    color: $light;
+  }
+  &.dark{
+    background-color: $dark;
+    color: $light;
+  }
+  &.light{
+    background-color: $light;
+    color: $dark;
+  }
+  &:hover{
+    cursor: pointer;
+  }
 }
-
-
 .panel{
-  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: $dark;
-  
+  padding: 20px 20px 50px 20px;
+  .upper-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .circle{
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        background-color: transparent;
+        border: 1px solid $light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &:hover{
+          cursor: pointer;
+        }
+        p{
+          text-align: center;
+          color: $light;
+          user-select: none;
+        }
+      }
+    }
+    .links{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      width: 100%;
+      .link{
+        display: flex;
+        align-items: center;
+        a{
+          display: block;
+          color: $light;
+          text-transform: capitalize;
+          text-decoration: none;
+          transition: 0.4s;
+          &:hover{
+            color: $buttons;
+          }
+        }
+        .svg-container{
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+          svg{
+            width: 40px;
+            height: 40px;
+            stroke: $light;
+            fill: $light;
+          }
+        }
+        
+      }
+    }
+  }
+  .bottom-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    a{
+      display: block;
+      color: $light;
+      text-transform: capitalize;
+      text-decoration: none;
+      transition: 0.4s;
+          &:hover{
+            color: $buttons;
+          }
+    }
+    svg{
+      width: 40px;
+      height: 40px;
+      stroke: $light;
+      margin-right: 10px;
+    }
+  }
 }
+
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .wrapper{
+    width: 90%;
+    margin: 0 auto;
+      .text-container{
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 10px;
+      }
+      .table-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .row{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .col{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 25px 50px;
+            border: 1px solid $dark;
+            border-right: none;
+            text-align: center;
+            .square{
+              width: 30px;
+              height: 30px;
+              border-radius: 5px;
+              &.pen{
+                background-color: $buttons;
+                margin-right: 10px;
+              }
+              &.trash{
+                background-color: $active;
+              }
+              &:hover{
+                cursor: pointer;
+              }
+            }
+            &.action{
+              // padding: 13px 30px;
+              padding: 20px 50px;
+            }
+            &.md{
+              border-top: none;
+              border-bottom: none;
+            }
+            &.bd-r{
+              border-right: 1px solid $dark;
+            }
+            &.title{
+              background-color: $dark;
+              h3{
+                text-transform: capitalize;
+                color: $light;
+              }
+            }
+            &.rc-l{
+              border-radius: 10px 0 0 0;
+            }
+            &.rc-r{
+              border-radius: 0 10px 0 0;
+            }
+          }
+        }
+        
+      }
+  }
+}
+// .text-container{
+//   display: flex;
+//   width: 100%;
+//   margin-bottom: 10px;
+//   input[type=text]{
+//     padding: 15px;
+//     width: 80%;
+//     margin-right: 10px;
+//     height: 100%;
+//     font-size: 20px;
+//     border-radius: 10px;
+//     border: 1px solid $light;
+//   }
+// }
