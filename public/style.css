@@ -48,6 +48,21 @@ h5 {
   width: 100%;
 }
 
+.shadow {
+  display: none;
+}
+.shadow.active {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  opacity: 0.5;
+  z-index: 10;
+}
+
 .btn {
   padding: 15px 100px;
   border-radius: 5px;
@@ -186,6 +201,7 @@ h5 {
   height: 100%;
   padding: 25px 50px;
   border: 1px solid #333333;
+  border-top: none;
   border-right: none;
   text-align: center;
 }
@@ -214,10 +230,6 @@ h5 {
 .content .wrapper .table-container .row .col.action {
   padding: 20px 50px;
 }
-.content .wrapper .table-container .row .col.md {
-  border-top: none;
-  border-bottom: none;
-}
 .content .wrapper .table-container .row .col.bd-r {
   border-right: 1px solid #333333;
 }
@@ -233,30 +245,52 @@ h5 {
 .content .wrapper .table-container .row .col.rc-r {
   border-radius: 0 10px 0 0;
 }
-.content .wrapper .modal {
+
+.text-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal {
   display: none;
 }
-.content .wrapper .modal.active {
+.modal.active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 31%;
+  width: 25%;
   border-radius: 20px;
   padding: 20px;
+  position: fixed;
+  top: 20%;
+  left: 37%;
+  z-index: 100;
+  background-color: #FAFAFA;
 }
-.content .wrapper .modal.active input[type=text] {
+.modal.active.delete {
+  top: 40%;
+  width: 24%;
+}
+.modal.active.delete .top {
+  margin-bottom: 0;
+}
+.modal.active input[type=text] {
   padding: 15px;
   width: 94%;
   height: 100%;
   font-size: 20px;
   border-radius: 10px;
-  border: 1px solid #333333;
+  border: 1px solid #8B8B8B;
   margin-bottom: 15px;
   font-family: "Montserrat";
   font-weight: 500;
 }
-.content .wrapper .modal.active .top {
+.modal.active input[type=text]:focus {
+  border: 1px solid #FAFAFA;
+}
+.modal.active .top {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,32 +298,24 @@ h5 {
   width: 100%;
   margin-bottom: 130px;
 }
-.content .wrapper .modal.active .top h3 {
+.modal.active .top h3 {
   margin-bottom: 30px;
 }
-.content .wrapper .modal.active .top .price {
+.modal.active .top .price {
   width: 94%;
   background-color: #D4D4D4;
   border-radius: 10px;
   padding: 15px;
-}
-.content .wrapper .modal.active .top .price p {
   text-align: center;
 }
-.content .wrapper .modal.active .bot {
+.modal.active .bot {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.content .wrapper .modal.active .bot .btn {
+.modal.active .bot .btn {
   padding: 15px 65px;
-}
-
-.text-container {
-  display: flex;
-  width: 100%;
-  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
