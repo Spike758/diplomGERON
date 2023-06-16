@@ -117,7 +117,7 @@
           <div class="text-container">
             <input type="button" value="Добавить тариф" class="btn inverse" onclick="modalOpen()">
           </div>
-          <div class="table-container">
+          <div class="table-container" id="ssd">
             <div class="row">
               <div class="col title rc-l"><h3>Наименование</h3></div>
               <div class="col title"><h3>Лицензии</h3></div>
@@ -145,7 +145,7 @@
                     />
                   </svg>
                 </div>
-                <div class="square trash" onclick="tableDelete()">
+                <div class="square trash" onclick="tableDelete(this)">
                   <svg
                     width="24"
                     height="24"
@@ -186,7 +186,7 @@
                     />
                   </svg>
                 </div>
-                <div class="square trash" onclick="tableDelete()">
+                <div class="square trash" onclick="tableDelete(this)">
                   <svg
                     width="24"
                     height="24"
@@ -227,7 +227,7 @@
                     />
                   </svg>
                 </div>
-                <div class="square trash" onclick="tableDelete()">
+                <div class="square trash" onclick="tableDelete(this)">
                   <svg
                     width="24"
                     height="24"
