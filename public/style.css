@@ -359,4 +359,15 @@ h5 {
   border: 1px solid #FAFAFA;
 }
 
+label {
+  position: relative;
+  display: inline-block;
+}
+label svg {
+  position: absolute;
+  top: 32%;
+  right: -1160px;
+  stroke: #D4D4D4;
+}
+
 /*# sourceMappingURL=style.css.map */

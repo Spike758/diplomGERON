@@ -115,7 +115,13 @@
       <div class="content">
         <div class="wrapper">
           <div class="text-container">
-            <input type="text" placeholder="Поиск">
+            <label for="find">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="7"  stroke-width="2"/>
+                    <path d="M20 20L17 17"  stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+              </label>
+            <input type="text" placeholder="Поиск" id="find" onkeyup="searchTable()">
             <input
               type="button"
               value="Добавить тариф"

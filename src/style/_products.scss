@@ -45,3 +45,14 @@
     }
     
 }
+label {
+    position: relative;
+    display: inline-block;
+    svg{
+        position: absolute;
+        top: 32%;
+        right: -1160px;
+        stroke: $strokeLight;
+    }
+  }
+  
