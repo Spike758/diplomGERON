@@ -1,0 +1,47 @@
+.content{
+    .wrapper{
+        .table-container{
+            &.products{
+                .col{
+                    &.name{
+                        text-align: start;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+#modalFormProducts{
+    &.active{
+        top: 30%;
+        .top{
+            margin-bottom: 15px;
+        }
+    }
+}
+#table_edit_products{
+    &.active{
+        top: 30%;
+        .top{
+            margin-bottom: 10px;
+            textarea{
+                padding: 15px;
+                width: 94%;
+                height: 100%;
+                font-size: 20px;
+                border-radius: 10px;
+                border: 1px solid $strokeDark;
+                margin-bottom: 15px;
+                font-family: "Montserrat";
+                font-weight: 500;
+                resize: none;
+                &:focus{
+                  border: 1px solid $light;
+                }
+            }
+        }
+    }
+    
+}

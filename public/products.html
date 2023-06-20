@@ -115,26 +115,22 @@
       <div class="content">
         <div class="wrapper">
           <div class="text-container">
-            
+            <input type="text" placeholder="Поиск">
             <input
               type="button"
               value="Добавить тариф"
               class="btn inverse"
-              onclick="modalOpen()"
+              onclick="products_modalOpen()"
             />
           </div>
-          <div class="table-container" id="ssd">
+          <div class="table-container products">
             <div class="row">
               <div class="col title rc-l"><h3>Наименование</h3></div>
-              <div class="col title"><h3>Лицензии</h3></div>
-              <div class="col title"><h3>Количество треков</h3></div>
               <div class="col title"><h3>Цена</h3></div>
               <div class="col title rc-r"><h3>Действие</h3></div>
             </div>
             <div class="row">
-              <div class="col name"><h3>Базовый</h3></div>
-              <div class="col lic"><h3>1</h3></div>
-              <div class="col track"><h3>5</h3></div>
+              <div class="col name"><h3>Музыкальные альбомы различных жанров.</h3></div>
               <div class="col price"><h3>10 000₸</h3></div>
               <div class="col bd-r action">
                 <div class="square pen" onclick="openEdit(this)">
@@ -173,9 +169,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col md name s"><h3>Продвинутый</h3></div>
-              <div class="col md lic"><h3>3</h3></div>
-              <div class="col md track"><h3>10</h3></div>
+              <div class="col md name"><h3>Роялти-фри музыкальные коллекции</h3></div>
               <div class="col md price"><h3>18 000₸</h3></div>
               <div class="col bd-r md action">
                 <div class="square pen" onclick="openEdit(this)">
@@ -215,8 +209,6 @@
             </div>
             <div class="row">
               <div class="col name"><h3>Премиум</h3></div>
-              <div class="col lic"><h3>5</h3></div>
-              <div class="col track"><h3>15</h3></div>
               <div class="col price"><h3>25 000₸</h3></div>
               <div class="col bd-r action">
                 <div class="square pen" onclick="openEdit(this)">
@@ -257,12 +249,12 @@
           </div>
         </div>
       </div>
-      <div class="modal" id="modalForm"></div>
+      <div class="modal" id="modalFormProducts"></div>
       <div class="modal delete" id="table_delete"></div>
-      <div class="modal edit" id="table_edit"></div>
+      <div class="modal edit" id="table_edit_products"></div>
       <div class="shadow" id="shadowBack" onclick="modalClose()"></div>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./products.js"></script>
   </body>
 </html>
