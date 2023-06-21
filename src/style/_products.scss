@@ -3,10 +3,25 @@
         .table-container{
             &.products{
                 .col{
+                    padding: 15px 50px;
+                    &.title{
+                        padding: 25px 50px;
+                    }
+                    &.price{
+                        height: 49px;
+                    }
+                    &.action{
+                        height: 39px;
+                    }
                     &.name{
                         text-align: start;
                         line-height: 24px;
+                        justify-content: flex-start;
+                        h3{
+                            height: 49px;
+                        }
                     }
+                   
                 }
             }
         }

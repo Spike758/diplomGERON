@@ -325,9 +325,25 @@ h5 {
   padding: 15px 65px;
 }
 
+.content .wrapper .table-container.products .col {
+  padding: 15px 50px;
+}
+.content .wrapper .table-container.products .col.title {
+  padding: 25px 50px;
+}
+.content .wrapper .table-container.products .col.price {
+  height: 49px;
+}
+.content .wrapper .table-container.products .col.action {
+  height: 39px;
+}
 .content .wrapper .table-container.products .col.name {
   text-align: start;
   line-height: 24px;
+  justify-content: flex-start;
+}
+.content .wrapper .table-container.products .col.name h3 {
+  height: 49px;
 }
 
 #modalFormProducts.active {
@@ -368,6 +384,88 @@ label svg {
   top: 32%;
   right: -1160px;
   stroke: #D4D4D4;
+}
+
+.content .wrapper .table-container.orders .col .block-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .wrapper .table-container.orders .col .list {
+  display: none;
+  width: 100%;
+}
+.content .wrapper .table-container.orders .col .list .block {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333333;
+  padding: 10px;
+}
+.content .wrapper .table-container.orders .col .list .block:hover {
+  cursor: pointer;
+}
+.content .wrapper .table-container.orders .col .list .block h3 {
+  user-select: none;
+}
+.content .wrapper .table-container.orders .col .list .p-block {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #333333;
+  width: 15.1%;
+}
+.content .wrapper .table-container.orders .col .list .p-block p {
+  user-select: none;
+  width: 80%;
+  padding: 10px;
+  color: #FAFAFA;
+  border-bottom: 1px solid #FAFAFA;
+}
+.content .wrapper .table-container.orders .col .list .p-block p:hover {
+  cursor: pointer;
+}
+.content .wrapper .table-container.orders .col .list .p-block :last-child {
+  border-bottom: none;
+}
+.content .wrapper .table-container.orders .col.d {
+  height: 39px;
+}
+.content .wrapper .table-container.orders .col.s {
+  height: 49px;
+}
+.content .wrapper .table-container.orders .col.n {
+  height: 90px;
+}
+.content .wrapper .table-container.orders .col.o {
+  height: 100px;
+}
+.content .wrapper .table-container.orders .col.j {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+}
+.content .wrapper .table-container.orders .col.k {
+  height: 120px;
+}
+.content .wrapper .table-container.orders .col #mb {
+  margin-bottom: 10px;
+}
+.content .wrapper .table-container.orders .col.position {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.content .wrapper .table-container.orders .col.position :nth-child(1) {
+  margin-bottom: 10px;
+}
+.content .wrapper .table-container.orders .col.order h3 {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -165,13 +165,11 @@ const editRow = () => {
 
 function searchTable() {
     // Получите значение введенное в input для поиска
-    var input = document.getElementById('searchInput');
+    var input = document.getElementById('find');
     var filter = input.value.toUpperCase();
-  
     // Получите таблицу и строки в таблице
     var table = document.getElementsByClassName('table-container')[0];
     var rows = table.getElementsByClassName('row');
-  
     // Пройдитесь по каждой строке таблицы и скройте те, которые не соответствуют введенному тексту
     for (var i = 0; i < rows.length; i++) {
       var name = rows[i].getElementsByClassName('col name')[0];
