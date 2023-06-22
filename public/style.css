@@ -99,6 +99,16 @@ h5 {
   background-color: #333333;
   padding: 20px 20px 50px 20px;
 }
+.panel.active {
+  align-items: center;
+}
+.panel.active .CaptionM {
+  display: none;
+}
+.panel.active .links {
+  justify-content: center;
+  align-items: center;
+}
 .panel svg {
   width: 40px;
   height: 40px;
@@ -167,6 +177,12 @@ h5 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.panel .bottom-block:hover a {
+  color: #FFC702;
+}
+.panel .bottom-block:hover svg {
+  fill: #FFC702;
 }
 
 .content {
@@ -466,6 +482,74 @@ label svg {
 }
 .content .wrapper .table-container.orders .col.order h3 {
   margin-right: 10px;
+}
+
+.content .wrapper-stat {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.content .wrapper-stat .income {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 50%;
+  padding-bottom: 120px;
+}
+.content .wrapper-stat .income #total {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.content .wrapper-stat .income p {
+  text-align: center;
+  color: #FAFAFA;
+  margin-bottom: 10px;
+}
+.content .wrapper-stat .income .block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FAFAFA;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.content .wrapper-stat .income .block h3 {
+  color: #FAFAFA;
+}
+.content .wrapper-stat .june {
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+}
+.content .wrapper-stat .june .card-inverse {
+  width: 100%;
+  background-color: #A93DFF;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+}
+.content .wrapper-stat .june .card-inverse:last-child {
+  margin-bottom: 0;
+}
+.content .wrapper-stat .june .card-inverse p {
+  text-align: center;
+  color: #FAFAFA;
+  margin-bottom: 10px;
+}
+.content .wrapper-stat .june .card-inverse .block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #FAFAFA;
+  margin-bottom: 10px;
+}
+.content .wrapper-stat .june .card-inverse .block h3 {
+  color: #FAFAFA;
+}
+.content .wrapper-stat .june .card-inverse .block.last {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=style.css.map */
